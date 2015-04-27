@@ -46,4 +46,4 @@ notifier.sendNotification('Title here', 'This is the body of the notification', 
 
 Copyright 2015 Michiel van der Velde.
 
-Licenced under the [MIT License](https://github.com/MichielvdVelde/novus-component/blob/master/LICENSE).
+Licenced under the [MIT License](https://github.com/MichielvdVelde/node-notifymyandroid/blob/master/LICENSE).
