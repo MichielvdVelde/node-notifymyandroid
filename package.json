@@ -1,0 +1,24 @@
+{
+	"name": "node-notifymyandroid",
+	"version": "0.1.0",
+	"description": "Library to send notifications to Android using the Notify My Android service.",
+	"author": {
+		"name": "Michiel van der Velde",
+		"email": "michiel@michielvdvelde.nl",
+		"url": "http://michielvdvelde.nl"
+	},
+	"main": "lib/NotifyMyAndroid.js",
+	"homepage": "https://github.com/MichielvdVelde/node-notifymyandroid",
+	"dependencies": {
+		"xml2js": "0.4.x",
+		"request": "2.x.x"
+	},
+	"engines": {
+		"node": ">=0.8.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/MichielvdVelde/node-notifymyandroid.git"
+	},
+	"license": "MIT"
+}
