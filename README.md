@@ -44,9 +44,9 @@ notifier.sendNotification('Title here', 'This is the body of the notification', 
 
 ## Changelog
 
-	V 0.1.2
-	 - Now supports notifier.isValidKey('another key here', function(err, valid) { }) to check the validity of a different key than when the object wqas created
-	 - Made notifier.hasCallsRemaining() available to check if the IP address still has calls remaining (returns a boolean)
+* V 0.1.2
+..* Now supports notifier.isValidKey('another key here', function(err, valid) { }) to check the validity of a different key than when the object was created
+..* Made notifier.hasCallsRemaining() available to check if the IP address still has calls remaining (returns a boolean)
 
 ## License
 
