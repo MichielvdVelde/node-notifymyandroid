@@ -1,6 +1,6 @@
 {
 	"name": "node-notifymyandroid",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Library to send notifications to Android using the Notify My Android service.",
 	"author": {
 		"name": "Michiel van der Velde",
