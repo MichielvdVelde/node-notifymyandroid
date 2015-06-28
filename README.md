@@ -3,7 +3,7 @@
 
 [Notify My Android](http://notifymyandroid.com) is a push message service and app for Android phones. This module provides easy to use methods for communicating with its API, allowing you to send notifications to your (or someone else's) Android phone from node.js.
 
-node-notifymyandroid respects the API's rate limiting and manages this automagically, so you don't have to do anything! When the rate limit is reached, an error will be triggered.
+node-notifymyandroid respects the API's rate limiting and manages this automagically, so you don't have to do anything! When the rate limit is reached, an error will be emitted.
 
 ## Installation
 
@@ -44,6 +44,8 @@ notifier.sendNotification('Title here', 'This is the body of the notification', 
 
 ## Changelog
 
+* V 0.1.3
+  * Fixed notifier.hasCallsRemaining
 * V 0.1.2
   * Now supports notifier.isValidKey('another key here', function(err, valid) { }) to check the validity of a different key than when the object was created
   * Made notifier.hasCallsRemaining() available to check if the IP address still has calls remaining (returns a boolean)
