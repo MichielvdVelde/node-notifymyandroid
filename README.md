@@ -44,6 +44,8 @@ notifier.sendNotification('Title here', 'This is the body of the notification', 
 
 ## Changelog
 
+* V 0.1.4
+  * Fixed notifier.getRemainingCalls
 * V 0.1.3
   * Fixed notifier.hasCallsRemaining
 * V 0.1.2
