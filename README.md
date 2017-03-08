@@ -17,10 +17,10 @@ The Notify My Android API provides 2 endpoints; one for checking the validation 
 
 ```js
 var Notifier = require('node-notifymyandroid').Notifier;
-var notifier = new Notifier('Application Name', 'Your 48 bytes long NMA API key');
+var notifier = new Notifier('Application Name', 'Your developer key, if you have one. This is optional.');
 
-notifier.isValidKey(function(err, valid) {
-	if(err) return console.log(err);
+notifier.isValidKey('Your 48 bytes long NMA API key' function(err, valid) {
+	if (err) return console.error(err);
 	console.log('Is this key valid? %s', (valid) ? 'Yes' : 'No');
 });
 ```
@@ -29,21 +29,24 @@ notifier.isValidKey(function(err, valid) {
 
 ```js
 var Notifier = require('node-notifymyandroid').Notifier;
-var notifier = new Notifier('Application Name', 'Your 48 bytes long NMA API key');
+var notifier = new Notifier('Application Name', 'Your developer key, if you have one. This is optional.');
 
 // All options are optional
 var options = {
-	'priority': 2, // The priority of the notification (-2 to 2, default is 0)
-	'url': 'http://github.com/MichielvdVelde/node-notifymyandroid' // The URL to include
+	priority: 2, // The priority of the notification (-2 to 2, default is 0)
+	url: 'http://github.com/MichielvdVelde/node-notifymyandroid', // The URL to include
+	contentType: 'text/html' // To allow basic HTML tags
 }
-notifier.sendNotification('Title here', 'This is the body of the notification', options, function(err) {
-	if(err) return console.log(err);
-	console.log('Message sent. %d calls remaining in the next %d minutes', notifier.getRemainingCalls(), notifier.getRemainingTime());
+notifier.sendNotification('API keys separated by commas. Each API key is a 48 bytes hexadecimal string.', 'The event that is being notified.', 'The notification text.', options, function (err) {
+	if (err) return console.error(err);
+	console.log('Message sent: %d calls remaining in the next %d minutes', notifier.getRemainingCalls(), notifier.getRemainingTime());
 });
 ```
 
 ## Changelog
 
+* V 1.0.0
+  * Rewritten code, added all currently available API options and documented functions
 * V 0.1.4
   * Fixed notifier.getRemainingCalls
 * V 0.1.3
@@ -54,6 +57,6 @@ notifier.sendNotification('Title here', 'This is the body of the notification', 
 
 ## License
 
-Copyright 2015 Michiel van der Velde.
+Copyright 2017 Michiel van der Velde.
 
 Licenced under the [MIT License](https://github.com/MichielvdVelde/node-notifymyandroid/blob/master/LICENSE).
