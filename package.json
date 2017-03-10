@@ -1,12 +1,18 @@
 {
 	"name": "node-notifymyandroid",
-	"version": "0.1.3",
+	"version": "1.0.0",
 	"description": "Library to send notifications to Android using the Notify My Android service.",
 	"author": {
 		"name": "Michiel van der Velde",
 		"email": "michiel@michielvdvelde.nl",
 		"url": "http://michielvdvelde.nl"
 	},
+	"contributors": [
+		{
+			"name": "Ronald Barendse",
+			"email": "ronald@barend.se"
+		}
+	],
 	"main": "lib/NotifyMyAndroid.js",
 	"homepage": "https://github.com/MichielvdVelde/node-notifymyandroid",
 	"dependencies": {
