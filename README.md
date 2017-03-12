@@ -61,6 +61,8 @@ notifier.sendNotification('API keys separated by commas. Each API key is a 48 by
 
 ## Changelog
 
+* V 1.0.1
+  * Fixed parse XML body error callback
 * V 1.0.0
   * Rewritten code, added all currently available API options and documented functions
 * V 0.1.4
