@@ -1,5 +1,21 @@
 
-# Notify My Android from node.js
+# Notify My Android from Node.js
+[![travis][travis-image]][travis-url]
+[![npm][npm-image]][npm-url]
+[![dependencies][dependencies-image]][dependencies-url]
+[![devDependencies][devDependencies-image]][devDependencies-url]
+[![standardjs][standardjs-image]][standardjs-url]
+
+[travis-image]: https://img.shields.io/travis/MichielvdVelde/node-notifymyandroid/master.svg
+[travis-url]: https://travis-ci.org/MichielvdVelde/node-notifymyandroid
+[npm-image]: https://img.shields.io/npm/v/node-notifymyandroid.svg
+[npm-url]: https://npmjs.org/package/node-notifymyandroid
+[dependencies-image]: https://david-dm.org/MichielvdVelde/node-notifymyandroid/status.svg
+[dependencies-url]: https://david-dm.org/MichielvdVelde/node-notifymyandroid
+[devDependencies-image]: https://david-dm.org/MichielvdVelde/node-notifymyandroid/dev-status.svg
+[devDependencies-url]: https://david-dm.org/MichielvdVelde/node-notifymyandroid?type=dev
+[standardjs-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
+[standardjs-url]: http://standardjs.com/
 
 [Notify My Android](http://notifymyandroid.com) is a push message service and app for Android phones. This module provides easy to use methods for communicating with its API, allowing you to send notifications to your (or someone else's) Android phone from node.js.
 
@@ -45,6 +61,8 @@ notifier.sendNotification('API keys separated by commas. Each API key is a 48 by
 
 ## Changelog
 
+* V 1.0.1
+  * Fixed parse XML body error callback
 * V 1.0.0
   * Rewritten code, added all currently available API options and documented functions
 * V 0.1.4
