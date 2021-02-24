@@ -6,6 +6,8 @@
 [![devDependencies][devDependencies-image]][devDependencies-url]
 [![standardjs][standardjs-image]][standardjs-url]
 
+**Deprecated**. Notify My Android is no longer active.
+
 [travis-image]: https://img.shields.io/travis/MichielvdVelde/node-notifymyandroid/master.svg
 [travis-url]: https://travis-ci.org/MichielvdVelde/node-notifymyandroid
 [npm-image]: https://img.shields.io/npm/v/node-notifymyandroid.svg
